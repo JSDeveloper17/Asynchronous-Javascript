@@ -1,8 +1,14 @@
-console.log("start")
+//!callback is a function that you pass into another function as an argument
+//  for executing later.
 
-function login(email, password){
-    setTimeout(() => {
-        
-    }, 2000);
+const sum = (a,b)=>{
+    return a+b
 }
-console.log("end")
+
+const number = (x, y, callback)=>{
+    return callback(x,y)
+}
+const result = number(3, 7, sum)
+console.log(result)
+
+
