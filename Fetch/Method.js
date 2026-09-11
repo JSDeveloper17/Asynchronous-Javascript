@@ -6,7 +6,7 @@ fetch("https://jsonplaceholder.typicode.com/users", {
     headers:{
       "Content-Type":"Application/json"//It tells the server what format the request body uses.
     },
-    body: JSON.stringify({name:"Alex"})
+    body: JSON.stringify({name:"Alex"}) //We convert javascrit request body into JSON:
 })
 
 //!Request Headers
